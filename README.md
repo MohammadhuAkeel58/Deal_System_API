@@ -2,7 +2,7 @@
 
 **DealAPI** is an **ASP.NET Core API** that helps manage deals and their associated hotels. This API allows users to perform CRUD operations on deals and associated hotels. It provides endpoints for creating, retrieving, updating, and deleting deals, while also supporting Swagger-based API documentation for easy interaction and testing.</br>
 
-<b><span>✨ Key Features</span></b>:</br>
+## <b><span>**✨ Key Features</span></b>:</br>
 - **Deal Management**: Create, read, update, and delete deals.</br>
 - **Hotel Management**: Add hotels to deals, with each hotel having a name, location, and description.</br>
 - **Swagger API Documentation**: Interactive documentation for easy testing of the API.</br>
@@ -94,7 +94,7 @@ Fill in the request body with valid data (as described in the API documentation)
 Press Execute to create a deal.</br>
 Example Test Using Postman:</br> You can also test API endpoints in Postman by sending POST, GET, PUT, or DELETE requests to the corresponding endpoints.</br>
 
-✨ Troubleshooting
+## **✨ Troubleshooting
 Common Issues:
 PostgreSQL Connection Issues: Ensure PostgreSQL is running and your connection string in appsettings.json is correct.</br>
 Missing Dependencies: If you encounter missing dependencies, make sure to run dotnet restore to restore the NuGet packages.</br>
