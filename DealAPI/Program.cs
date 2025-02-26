@@ -4,6 +4,7 @@ using DealAPI.Validation;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,18 @@ builder.Services.AddCors(options =>
         policy => policy.AllowAnyOrigin()
                         .AllowAnyMethod()
                         .AllowAnyHeader());
+});
+
+
+builder.Services.AddSwaggerGen(options =>
+{
+    // Optionally set up metadata for Swagger
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "My API",
+        Version = "v1",
+        Description = "An example API for demonstrating Swagger documentation."
+    });
 });
 
 // Add services to the container.
